@@ -21,9 +21,7 @@ jobs:
         with:
           use-cross: true
           command: build
-          args: \
-            --release \
-            --target x86_64-unknown-linux-musl
+          args: --release --target x86_64-unknown-linux-musl
       - run: ls -lah target/release
 
   # build-aarch64:
